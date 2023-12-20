@@ -1,7 +1,8 @@
+import numpy
 import numpy as np
 
 
-def ED_distance(ts1, ts2):
+def ED_distance(ts1: numpy.ndarray, ts2: numpy.ndarray) -> float:
     """
     Calculate the Euclidean distance.
 
@@ -21,7 +22,7 @@ def ED_distance(ts1, ts2):
     
     ed_dist = 0
 
-    # INSERT YOUR CODE
+    ed_dist = np.sqrt(np.sum((ts1 - ts2)**2))
     
     return ed_dist
 
